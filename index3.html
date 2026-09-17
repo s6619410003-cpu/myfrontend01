@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>xxxx</title>
+ 
+  <!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com"></script>
+ 
+  <!-- Google Fonts: Bebas Neue (Headings) & Prompt (Thai text) & Inter -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700&family=Prompt:wght@300;400;500;600;700&display=swap%22 rel="stylesheet" />
+ 
+  <!-- Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+ 
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['"Bebas Neue"', 'sans-serif'],
+            thai: ['"Prompt"', 'sans-serif'],
+            sans: ['"Inter"', '"Prompt"', 'sans-serif'],
+          },
+          colors: {
+            brandDark: '#020617',
+            navyBg: '#051139',
+            navyInput: '#070f2b',
+            navyCard: '#091544',
+          }
+        }
+      }
+    }
+</script>
+</head>
+<body class="bg-navyBg text-white font-sans selection:bg-blue-500 selection:text-white">
+ 
+  <!-- Topbar -->
+<div class="w-full bg-brandDark">
+<header class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+<div class="font-heading tracking-wider text-xl text-white">
+        Anucha Saelim
+</div>
+<nav class="flex items-center gap-6 text-xs text-gray-300 font-medium">
+<a href="#work" class="hover:text-white transition">Work</a>
+<a href="#about" class="hover:text-white transition">About</a>
+<a href="#contact" class="hover:text-white transition">Contact</a>
+</nav>
+</header>
+</div>
+ 
+  <!-- Hero Section -->
+<section class="max-w-6xl mx-auto px-6 py-16 lg:py-24">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+<div class="lg:col-span-6 space-y-6">
+<h1 class="font-heading text-6xl sm:text-7xl lg:text-8xl tracking-wider leading-[0.95] text-white">
+          HI, I AM<br />Anucha S.
+</h1>
+<p class="font-thai text-xs sm:text-sm text-gray-300 leading-relaxed font-light max-w-md">
+          นักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์จากประเทศไทย ที่มีความหลงใหลในการสร้าง เว็บไซต์ที่เข้าถึงได้และเป็นมิตรกับผู้ใช้
+</p>
+<div class="flex items-center gap-3 pt-2">
+<a href="#contact" class="inline-flex items-center gap-2 bg-[#d2e2ff] text-navyBg px-5 py-2.5 rounded-full text-xs font-bold tracking-wider hover:bg-white transition">
+<span>CONTACT ME</span>
+<span class="w-1.5 h-1.5 rounded-full bg-navyBg"></span>
+</a>
+<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-gray-300 hover:text-white hover:bg-black/60 transition text-sm">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-gray-300 hover:text-white hover:bg-black/60 transition text-sm">
+<i class="fa-brands fa-github"></i>
+</a>
+</div>
+</div>
+ 
+      <div class="lg:col-span-6 flex justify-center lg:justify-end">
+<div class="w-full max-w-md aspect-square rounded-3xl overflow-hidden shadow-2xl bg-slate-900 border border-white/5">
+<img src="./images/p3.png" alt="Profile" class="w-full h-full object-cover" />
+</div>
+</div>
+ 
+    </div>
+</section>
+ 
+  <!-- About Me Section -->
+<section id="about" class="border-t border-white/10 py-16 lg:py-24">
+<div class="max-w-6xl mx-auto px-6 space-y-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+<div class="lg:col-span-5">
+<h2 class="font-heading text-5xl sm:text-6xl tracking-wider text-white">
+            ABOUT ME
+</h2>
+</div>
+ 
+        <div class="lg:col-span-7 space-y-6">
+<h3 class="font-thai text-xl sm:text-2xl font-semibold leading-snug text-white">
+            ผมเป็นนักพัฒนาเว็บไซต์ฝั่งฟรอนท์เอนด์ที่ทำงานอยู่ในกรุงเทพฯ กำลังมองหาโอกาสที่น่าตื่นเต้น ในการ ทำงานมีพื้นฐานการศึกษาด้าน วิศวกรรมซอฟต์แวร์
+</h3>
+<p class="font-thai text-xs text-gray-300 leading-relaxed font-light">
+            ชอบให้ความสำคัญกับการเข้าถึง (accessibility) เมื่อพัฒนาเว็บไซต์ มีความกระตือรือร้นและอยากรู้ อยากเห็นเกี่ยวกับการแก้ปัญหาต่างๆ ปัจจุบันกำลังศึกษาเรียนรู้เกี่ยวกับ React.js และการออกแบบเว็บไซต์เล็กน้อยเมื่อไม่ได้เขียนโปรแกรม ดิดิน/ผมชอบเล่นฟุตบอล ถ่ายภาพ และเล่นเกม FIFA, Diablo กำลังเรียนรู้เพิ่มเติมเพื่อพัฒนาทักษะอยู่เสมอ
+</p>
+<div class="flex items-center gap-3 pt-2">
+<a href="#" class="inline-flex items-center gap-2 bg-[#d2e2ff] text-navyBg px-5 py-2.5 rounded-full text-xs font-bold tracking-wider hover:bg-white transition">
+<span>DOWNLOAD RESUME</span>
+<span class="w-1.5 h-1.5 rounded-full bg-navyBg"></span>
+</a>
+<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-gray-300 hover:text-white hover:bg-black/60 transition text-sm">
+<i class="fa-brands fa-linkedin-in"></i>
+</a>
+<a href="#" class="w-9 h-9 flex items-center justify-center rounded-full bg-black/40 text-gray-300 hover:text-white hover:bg-black/60 transition text-sm">
+<i class="fa-brands fa-github"></i>
+</a>
+</div>
+</div>
+ 
+      </div>
+ 
+      <div class="w-full rounded-2xl overflow-hidden h-72 sm:h-96 bg-slate-900 border border-white/5">
+<img src="./images/p4.png" alt="Workspace" class="w-full h-full object-cover" />
+</div>
+</div>
+</section>
+ 
+  <!-- My Capabilities Section -->
+<section id="capabilities" class="border-t border-white/10 py-16 lg:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-heading text-5xl sm:text-6xl tracking-wider text-white">
+            MY CAPABILITIES
+</h2>
+</div>
+ 
+        <div class="lg:col-span-7 space-y-6">
+<p class="font-thai text-xs sm:text-sm text-gray-300 font-light leading-relaxed">
+            ผมมองหาโอกาสในการเพิ่มทักษะใหม่ๆ อยู่เสมอ ทั้งการพัฒนาฟรอนท์เอนด์ แบล็คเอนด์ การออกแบบ UX/UI ฐานข้อมูล
+</p>
+<div class="flex flex-wrap gap-2.5 pt-2">
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">HTML</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">CSS</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">JAVASCRIPT</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">FLUTTER</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">DART</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">IOT</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">REACT</span>
+<span class="px-5 py-2 rounded-full border border-blue-400/40 bg-navyCard/60 text-[11px] font-bold tracking-wider text-blue-200">DATABASE</span>
+</div>
+</div>
+ 
+      </div>
+</div>
+</section>
+ 
+  <!-- My Experience Section -->
+<section id="work" class="border-t border-white/10 py-16 lg:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<div class="lg:col-span-5">
+<h2 class="font-heading text-5xl sm:text-6xl tracking-wider text-white">
+            MY EXPERIENCE
+</h2>
+</div>
+ 
+        <div class="lg:col-span-7 space-y-10">
+<div class="space-y-3">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<h3 class="text-base sm:text-lg font-bold text-white">Freelance Developer</h3>
+<span class="text-xs text-gray-400">Nov 2023 — Present</span>
+</div>
+<p class="font-thai text-xs text-gray-300 leading-relaxed font-light">
+              พัฒนาและปรับปรุงส่วนติดต่อผู้ใช้สำหรับเว็บแอปพลิเคชันโดยใช้ React.js ทำงานร่วมกับทีมออกแบบ UX/UI เพื่อสร้างประสบการณ์ผู้ใช้ที่น่าประทับใจปรับปรุงความเร็วในการโหลดเว็บไซต์ด้วยเทคนิคการเพิ่มประสิทธิภาพต่างๆร่วมพัฒนาและดูแลไลบรารีคอมโพเนนต์ภายในองค์กร
+</p>
+</div>
+ 
+          <div class="space-y-3">
+<div class="flex items-center justify-between flex-wrap gap-2">
+<h3 class="text-base sm:text-lg font-bold text-white">Front-End Intern</h3>
+<span class="text-xs text-gray-400">Sep 2023 — Nov 2023</span>
+</div>
+<p class="font-thai text-xs text-gray-300 leading-relaxed font-light">
+              พัฒนาเว็บไซต์ลูกค้าโดยใช้ HTML, CSS และ JavaScript ช่วยปรับปรุงการเข้าถึง (Accessibility) ของเว็บไซต์ให้สอดคล้องกับมาตรฐาน WCAG ทำงานร่วมกับทีมแบล็กเอนด์เพื่อเชื่อมต่อ API
+</p>
+</div>
+</div>
+ 
+      </div>
+</div>
+</section>
+ 
+  <!-- Let's Connect Section -->
+<section id="contact" class="border-t border-white/10 py-16 lg:py-24">
+<div class="max-w-6xl mx-auto px-6">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<div class="lg:col-span-5 space-y-6">
+<h2 class="font-heading text-5xl sm:text-6xl tracking-wider text-white">
+            LET'S CONNECT
+</h2>
+<div class="space-y-1 text-xs text-gray-300">
+<p>Say hello at <a href="mailto:xxxx@sau.ac.th" class="hover:text-white">s6619410003@sau.ac.th</a></p>
+<p>For more info, here's my <a href="#" class="hover:text-white">resume</a></p>
+</div>
+<div class="flex items-center gap-4 text-gray-400 text-lg pt-2">
+<a href="#" class="hover:text-white transition"><i class="fa-brands fa-linkedin-in"></i></a>
+<a href="#" class="hover:text-white transition"><i class="fa-brands fa-github"></i></a>
+<a href="#" class="hover:text-white transition"><i class="fa-brands fa-x-twitter"></i></a>
+<a href="#" class="hover:text-white transition"><i class="fa-brands fa-instagram"></i></a>
+</div>
+</div>
+ 
+        <div class="lg:col-span-7">
+<form class="space-y-4 max-w-lg">
+<div>
+<label class="block text-xs font-medium text-gray-300 mb-1.5">Name</label>
+<input type="text" class="w-full bg-navyInput border border-white/10 rounded-md px-3 py-2.5 text-xs text-white focus:outline-none focus:border-blue-400 transition" />
+</div>
+<div>
+<label class="block text-xs font-medium text-gray-300 mb-1.5">Email</label>
+<input type="email" class="w-full bg-navyInput border border-white/10 rounded-md px-3 py-2.5 text-xs text-white focus:outline-none focus:border-blue-400 transition" />
+</div>
+<div>
+<label class="block text-xs font-medium text-gray-300 mb-1.5">Subject</label>
+<input type="text" class="w-full bg-navyInput border border-white/10 rounded-md px-3 py-2.5 text-xs text-white focus:outline-none focus:border-blue-400 transition" />
+</div>
+<div>
+<label class="block text-xs font-medium text-gray-300 mb-1.5">Message</label>
+<textarea rows="4" class="w-full bg-navyInput border border-white/10 rounded-md px-3 py-2.5 text-xs text-white focus:outline-none focus:border-blue-400 transition resize-none"></textarea>
+</div>
+<button type="submit" class="bg-[#8ea7ff] hover:bg-[#a6bbff] text-navyBg px-8 py-2 rounded-full text-xs font-bold tracking-wider transition">
+              SUBMIT
+</button>
+</form>
+</div>
+ 
+      </div>
+</div>
+</section>
+ 
+  <!-- Footer -->
+<footer class="w-full border-t border-white/10 bg-brandDark py-6 text-center text-[11px] text-gray-400 font-light">
+    © 2025 Created by SAU-Dev-Team
+</footer>
+ 
+</body>
+</html>
